@@ -1,0 +1,88 @@
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --color-primary: #5d25b7;
+    --color-secondary: #1ca0f9;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-heading: #12263c;
+    --color--grey: #f4f4f4;
+    --color--border-grey: #d1d1d1;
+    --color-text: #333333;
+    --footer-color: #151515;
+    --button-curved-100: 100%;
+    --border-radius-1: 5px;
+  }
+
+/* css reset */
+    *,
+    *::after,
+    *::before {
+      margin: 0;
+      padding: 0;
+      box-sizing: inherit;
+    }
+    /* End of css reset */
+
+/* Typography */
+
+h1,
+h2,
+h3,
+p,
+li {
+    font-family: Poppins, sans-serif;
+    line-height: 1.3;
+    font-size: 1.6rem;
+    color: var(--color-black);
+}
+
+body,
+ul,
+li {
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+}
+
+.heading1 {
+    font-size: 4.2rem;
+  }
+.heading3 {
+    font-size: 2.4rem;
+  }
+p {
+    font-size: 1.6rem;
+  }
+.font--bold {
+    font-weight: 700;
+  }
+.font--Semibold {
+    font-weight: 500;
+  }
+.font--light {
+    font-weight: 300;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .heading1 {
+        font-size: 3rem;
+    }
+    .heading3 {
+        font-size: 2.3rem;
+    }
+  }
+
+  /* Links */
+
+a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    color: var(--color-black);
+}
+
+a:hover {
+    color: var(--color-text);
+}
