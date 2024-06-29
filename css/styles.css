@@ -20,7 +20,6 @@ html {
     *,
     *::after,
     *::before {
-      margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
@@ -133,9 +132,21 @@ a:hover {
   margin-right: 2rem;
 }
 
+/* collapsible */
+.collapsible__content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all .5s;
+}
+
+.collapsible--expanded  .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
+}
+
 /* Navigation Bar*/
 .header {
-  padding: .5rem .5rem;
   position: fixed;
   background: var(--color-white);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
@@ -147,21 +158,17 @@ a:hover {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 1rem;
 }
 
 .nav__list {
   width: 100%;
+  margin: 0;
 
 }
 
 .nav__item {
   margin-bottom: 2rem;
   font-weight: 400;
-}
-
-.nav__item > a {
-  color: var(--color-heading);
 }
 
 .nav__menu {
@@ -172,7 +179,6 @@ a:hover {
 
 .nav__logo {
   width: 15rem;
-  margin-bottom: 1rem;
 }
 
 .nav__btn {
@@ -182,4 +188,31 @@ a:hover {
 
 .nav__btn > a{
   color: var(--color-white);
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 1rem 30px;
+  }
+
+  .nav__logo {
+    width: 20rem;
+  }
+
+  .nav__menu {
+    display: none;
+  }
+
+  .nav__item {
+    margin: 0 2rem 0 5rem;
+    align-self: center;
+    font-size: 1.6rem;
+  }
+
+  .nav__list {
+    width: auto;
+    display: flex;
+    max-height: 100%;
+    opacity: 1;
+  }
 }
