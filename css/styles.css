@@ -22,7 +22,7 @@ html {
     *::before {
       margin: 0;
       padding: 0;
-      box-sizing: inherit;
+      box-sizing: border-box;
     }
     /* End of css reset */
 
@@ -77,9 +77,9 @@ p {
 /* Links */
 a {
     text-decoration: none;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     text-transform: capitalize;
-    color: var(--color-black);
+    color: var(--color-heading);
 }
 
 a:hover {
@@ -134,3 +134,52 @@ a:hover {
 }
 
 /* Navigation Bar*/
+.header {
+  padding: .5rem .5rem;
+  position: fixed;
+  background: var(--color-white);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  z-index: 666;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.nav__list {
+  width: 100%;
+
+}
+
+.nav__item {
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.nav__item > a {
+  color: var(--color-heading);
+}
+
+.nav__menu {
+  width: 4rem;
+  height: 4.4rem;
+  padding-right: 1rem;
+}
+
+.nav__logo {
+  width: 15rem;
+  margin-bottom: 1rem;
+}
+
+.nav__btn {
+  padding: 0.9rem 2.4rem;
+  width: 13rem;
+}
+
+.nav__btn > a{
+  color: var(--color-white);
+}
