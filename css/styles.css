@@ -68,6 +68,9 @@ p {
 .font--light {
     font-weight: 300;
   }
+.font--bolder {
+  font-weight: 800;
+}
 
   @media screen and (min-width: 1024px) {
     .heading1 {
@@ -244,11 +247,30 @@ a:hover {
 /* Hero */
 .hero__content {
   align-self: center;
-  /*padding: 5rem 12rem;*/
   text-align: center;
-  padding-top: 3rem;
+  padding-top: 11rem;
 }
 
 .hero__image {
   display: none;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__content {
+    margin-top: 8rem;
+    padding: 5rem 7rem;
+    text-align: left;
+    font-size: 4.2rem;
+    line-height: 1.3rem;
+  }
+
+  .hero__content .heading1 {
+    font-weight: bolder;
+    font-size: 4rem;
+  }
+
+  .hero__image {
+    display: block;
+  }
 }
