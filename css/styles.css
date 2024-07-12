@@ -72,6 +72,10 @@ p {
   font-weight: 800;
 }
 
+.txt-color__white {
+  color: #ffffff;
+}
+
   @media screen and (min-width: 1024px) {
     .heading1 {
         font-size: 3rem;
@@ -253,7 +257,6 @@ a:hover {
 
 .hero__image {
   display: none;
-  max-width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -272,5 +275,44 @@ a:hover {
 
   .hero__image {
     display: block;
+    margin: 0;
+    max-width: 100%;
   }
 }
+
+/* Side fold */
+.side-fold {
+  background: var(--color-primary);
+  padding: 5rem 2rem 2rem;
+  margin-top: 5rem;
+}
+
+.side-fold > p {
+  margin: 0;
+}
+
+.side-fold__content {
+  text-align: center;
+  
+}
+
+@media screen and (min-width: 767px) {
+  .side-fold {
+    display: flex;
+  }
+
+  .side-fold__content {
+    text-align: left;
+    padding: 3rem 10rem;
+  }
+
+  .absoluteBorder {
+    position: relative;
+    width: 1px;
+    height: 200px;
+    background-color: #aaa;
+    top: 0;
+    left: 0;
+}
+}
+
