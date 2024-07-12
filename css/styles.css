@@ -1,3 +1,13 @@
+/* css reset */
+    *,
+    *::after,
+    *::before {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    /* End of css reset */
+    
 html {
     font-size: 62.5%;
 }
@@ -16,14 +26,6 @@ html {
     --border-radius-1: 5px;
   }
 
-/* css reset */
-    *,
-    *::after,
-    *::before {
-      padding: 0;
-      box-sizing: border-box;
-    }
-    /* End of css reset */
 
 /* Typography */
 
@@ -78,7 +80,7 @@ p {
 
   @media screen and (min-width: 1024px) {
     .heading1 {
-        font-size: 3rem;
+        font-size: 4rem;
     }
     .heading3 {
         font-size: 2.3rem;
@@ -162,7 +164,7 @@ a:hover {
   display: grid;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .grid--1x2 {
     grid-template-columns: repeat(2,1fr);
   }
@@ -223,7 +225,7 @@ a:hover {
 
 @media screen and (min-width: 1024px) {
   .header {
-    padding: 1rem 30px;
+    padding: 1rem 3rem 0;
   }
 
   .nav__logo {
@@ -235,7 +237,6 @@ a:hover {
   }
 
   .nav__item {
-    margin: 0 2rem 0 5rem;
     align-self: center;
     font-size: 1.6rem;
   }
@@ -244,6 +245,7 @@ a:hover {
     width: auto;
     display: flex;
     max-height: 100%;
+    gap: 4rem;
     opacity: 1;
   }
 }
@@ -257,26 +259,28 @@ a:hover {
 
 .hero__image {
   display: none;
+  
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .hero__content {
     margin-top: 8rem;
     padding: 5rem 7rem;
     text-align: left;
     font-size: 4.2rem;
     line-height: 1.3rem;
+    
   }
 
   .hero__content .heading1 {
     font-weight: bolder;
-    font-size: 4rem;
   }
 
   .hero__image {
     display: block;
     margin: 0;
     max-width: 100%;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -296,7 +300,7 @@ a:hover {
   
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 1024px) {
   .side-fold {
     display: flex;
   }
