@@ -27,7 +27,7 @@ html {
   }
 
 
-/* Typography */
+/* ============================ Typography ============================ */
 
 h1,
 h2,
@@ -87,7 +87,7 @@ p {
     }
 }
 
-/* Links */
+/* ============================ Links ============================ */
 a {
     text-decoration: none;
     font-size: 1.5rem;
@@ -99,7 +99,7 @@ a:hover {
     color: var(--color-primary);
 }
 
-/* Buttons */
+/* ============================ Buttons ============================ */
 .btn {
     font-size: 1.8rem;
     text-transform: capitalize;
@@ -134,7 +134,7 @@ a:hover {
   opacity: .7;
 }
 
-/* Lists */
+/* ============================ Lists ============================ */
 .list {
   list-style: none;
   padding-left: 0;
@@ -146,7 +146,7 @@ a:hover {
   margin-right: 2rem;
 }
 
-/* collapsible */
+/* ============================ collapsible ============================ */
 .collapsible__content {
   max-height: 0;
   opacity: 0;
@@ -170,7 +170,7 @@ a:hover {
   }
 }
 
-/* Navigation Bar*/
+/* ============================ Navigation Bar ============================*/
 .header {
   position: fixed;
   background: var(--color-white);
@@ -250,7 +250,7 @@ a:hover {
   }
 }
 
-/* Hero */
+/* ============================ Hero ============================ */
 .hero__content {
   align-self: center;
   text-align: center;
@@ -284,7 +284,7 @@ a:hover {
   }
 }
 
-/* Side fold */
+/* ============================ Side fold ============================ */
 .side-fold {
   background: var(--color-primary);
   padding: 5rem 2rem 2rem;
