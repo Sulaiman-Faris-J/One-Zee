@@ -41,7 +41,7 @@ li {
 }
 
 p {
-  line-height: 2.5rem;
+  line-height: 2.6rem;
   padding-bottom: 2rem;
 }
 
@@ -55,7 +55,7 @@ li {
 .heading1 {
     font-size: 3rem;
   }
-.heading3 {
+.heading2 {
     font-size: 2.4rem;
   }
 p {
@@ -168,6 +168,10 @@ a:hover {
   .grid--1x2 {
     grid-template-columns: repeat(2,1fr);
   }
+  .grid--2x2 {
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+  }
 }
 
 /* ============================ Navigation Bar ============================*/
@@ -257,6 +261,11 @@ a:hover {
   padding-top: 11rem;
 }
 
+.hero__info {
+  margin-top: 1.8rem;
+  margin-bottom: 1rem;
+}
+
 .hero__image {
   display: none;
   
@@ -274,6 +283,11 @@ a:hover {
 
   .hero__content .heading1 {
     font-weight: bolder;
+  }
+
+  .hero__info {
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
   }
 
   .hero__image {
@@ -320,3 +334,53 @@ a:hover {
 }
 }
 
+/* ============================ service-block ============================ */
+
+.service-block {
+  padding: 1rem;
+}
+
+.service-block__heading {
+  display: flex;
+  margin: 8rem 1rem;
+  justify-content: center;
+}
+
+.card-holder {
+  display: flex;
+  gap: 4rem;
+  
+}
+
+.card-holder__item {
+  display: flex;
+  flex-direction: column;
+  min-height: 15rem;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.card-holder__image {
+  width: 5rem;
+  align-self: center;
+  margin-bottom: 2rem;
+}
+
+.card-holder__text {
+  text-align: center;
+  padding: 0 1rem;
+  margin: 0 1rem;
+}
+
+@media (min-width: 520px) and (max-width: 845px) {
+  .card-holder {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+  }
+}
+@media screen and (max-width: 519px) {
+  .card-holder {
+    display: grid;
+  }
+}
