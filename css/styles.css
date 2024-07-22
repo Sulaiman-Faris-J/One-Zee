@@ -404,6 +404,10 @@ a:hover {
 }
 
 /* ============================ About Us ============================ */
+.about-us--block {
+  padding-bottom: 5rem;
+}
+
 .about-us__text {
   padding: 8rem;
   text-align: left;
@@ -443,3 +447,53 @@ a:hover {
   }
 }
 
+/* ============================ Digital solution Block ============================ */
+.digital-solution--block {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.digital-solution__right-side {
+  display: flex;
+}
+
+.digital-solution__right-para {
+  text-align: left;
+  padding: 8.5rem 11rem;
+}
+
+.digital-solution__right-para .heading1 {
+  margin-bottom: 2rem;
+}
+
+
+.digital-solution__right-para2 {
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 1150px) {
+  .digital-solution__left-image {
+    display: none;
+  }
+
+  .digital-solution__right-side {
+    flex-direction: column;
+  }
+
+  .digital-solution__right-para {
+    text-align: center;
+    padding: 2rem 2rem;
+  }
+  
+  .digital-solution__right-para2 {
+    text-align: center;
+  }
+
+  .digital-solution__right-image {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2rem;
+  }
+}
