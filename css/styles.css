@@ -373,6 +373,10 @@ a:hover {
 }
 
 @media (min-width: 520px) and (max-width: 845px) {
+  .service-block {
+    padding: 1rem 6.5rem;
+  }
+
   .card-holder {
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -380,7 +384,18 @@ a:hover {
   }
 }
 @media screen and (max-width: 519px) {
+  .card-holder__item {
+    margin: 0;
+  }
+
   .card-holder {
     display: grid;
+    gap: 1;
+  }
+
+  .card-holder__text {
+    padding: 0 8rem;
   }
 }
+
+/* ============================ ============================ */
