@@ -451,7 +451,6 @@ a:hover {
 .digital-solution--block {
   display: flex;
   gap: 2rem;
-  padding: 2rem;
 }
 
 .digital-solution__right-side {
@@ -460,7 +459,7 @@ a:hover {
 
 .digital-solution__right-para {
   text-align: left;
-  padding: 8.5rem 11rem;
+  padding: 8.7rem 5rem;
 }
 
 .digital-solution__right-para .heading1 {
@@ -497,3 +496,65 @@ a:hover {
     margin-bottom: 2rem;
   }
 }
+
+/* ============================ Branding-block ============================ */
+.branding-block {
+  padding-top: 7rem;
+}
+
+.branding__image {
+  padding-left: 8rem;
+}
+
+.branding__text {
+  text-align: left;
+  padding: 0 2rem ;
+}
+
+.branding__text > h2 {
+  line-height: 1.5;
+  padding-right: 20rem;
+  padding-bottom: 3rem;
+}
+
+.branding__text2 {
+  padding: 5rem;
+  padding-left: 10rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .branding-block {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+  }
+
+  .branding__image, .branding__image2 {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .branding__image-container {
+    justify-self: center;
+    align-self: center;
+
+  }
+
+  .branding__text, .branding__text2 {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .branding__text > h2 {
+    padding: 3rem 0;
+  }
+
+  .image-swap {
+    order: 3;
+  }
+
+  .text-swap {
+    order: 4;
+  }
+}
+
