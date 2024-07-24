@@ -451,6 +451,7 @@ a:hover {
 .digital-solution--block {
   display: flex;
   gap: 2rem;
+  padding: 5rem;
 }
 
 .digital-solution__right-side {
@@ -459,7 +460,7 @@ a:hover {
 
 .digital-solution__right-para {
   text-align: left;
-  padding: 8.7rem 5rem;
+  padding: 8.5rem 9rem;
 }
 
 .digital-solution__right-para .heading1 {
@@ -504,6 +505,10 @@ a:hover {
 
 .branding__image {
   padding-left: 8rem;
+}
+
+.branding__image, .branding__image2 {
+  max-width: 100%;
 }
 
 .branding__text {
@@ -558,3 +563,63 @@ a:hover {
   }
 }
 
+/* ============================ Talent Agumentation Block ============================ */
+.talen-agumentation--block {
+  display: flex;
+  gap: 2rem;
+  padding: 5rem;
+  padding-top: 10rem;
+}
+
+.talen-agumentation__right-side {
+  display: flex;
+}
+
+.talen-agumentation__right-para {
+  text-align: left;
+  padding: 8.5rem 3rem;
+}
+
+.talen-agumentation__right-para .heading1 {
+  margin-bottom: 2rem;
+}
+
+
+.talen-agumentation__right-para2 {
+  padding: 2.5rem;
+  padding-top: 4rem;
+}
+
+@media screen and (max-width: 1150px) {
+  .talen-agumentation__left-image {
+    display: none;
+  }
+
+  .talen-agumentation__right-side {
+    flex-direction: column;
+  }
+
+  .talen-agumentation__right-para {
+    text-align: center;
+    padding: 2rem 2rem;
+  }
+  
+  .talen-agumentation__right-para2 {
+    text-align: center;
+  }
+
+  .talen-agumentation__right-image {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2rem;
+  }
+  .image-swap {
+    order: 3;
+  }
+
+  .text-swap {
+    order: 4;
+  }
+}
+
+/**/
