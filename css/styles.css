@@ -694,9 +694,20 @@ input:focus {
 
 .footer__heading {
   text-align: right;
+  padding-top: 3rem;
 }
 
 .social-media {
   padding: 1rem;
   text-align: right;
+}
+
+@media screen and (max-width: 425px) {
+  .footer-block {
+    display: grid;
+    text-align: center;
+  }
+  .footer__heading, .social-media {
+    text-align: center;
+  }
 }
