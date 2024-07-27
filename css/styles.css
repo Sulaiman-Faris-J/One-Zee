@@ -40,6 +40,10 @@ li {
     margin: 0;
 }
 
+textarea {
+  font-family: Poppins, sans-serif;
+}
+
 p {
   line-height: 2.6rem;
   padding-bottom: 2rem;
@@ -474,6 +478,10 @@ a:hover {
 }
 
 @media screen and (max-width: 1150px) {
+.digital-solution--block {
+  padding: 0;
+}
+
   .digital-solution__left-image {
     display: none;
   }
@@ -591,6 +599,10 @@ a:hover {
 }
 
 @media screen and (max-width: 1150px) {
+.talen-agumentation--block {
+  padding: 0;
+}
+
   .talen-agumentation__left-image {
     display: none;
   }
@@ -622,4 +634,69 @@ a:hover {
   }
 }
 
-/**/
+/* ============================ Form Block ============================ */
+
+.form-block {
+  text-align: center;
+  max-width: 50%;
+  margin-left: 25%;
+  margin-top: 5rem;
+}
+
+.form-block > .heading1 {
+  padding-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+input, textarea {
+
+  font-size: 1.6rem;
+  width: 100%;
+  outline-color: var(--color-primary);
+  border: 1px solid var(--color--border-grey);
+  border-radius: 5px;
+  padding: 20px 25px;
+  margin-bottom: 5rem;
+}
+
+input:focus {
+  outline-color: var(--color-primary);
+}
+
+@media screen and (max-width: 768px) {
+  .form-block {
+    padding: 1rem;
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  input, textarea {
+    margin-bottom: 2rem;
+  }
+}
+
+/* ============================ footer Block ============================ */
+.footer-block {
+  display: flex;
+  padding: 75px 50px;
+  background: var(--footer-color);
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+.footer__logo {
+  margin-bottom: 2rem;
+}
+
+.footer__inner-left > p {
+  margin-bottom: 1rem;
+}
+
+.footer__heading {
+  text-align: right;
+}
+
+.social-media {
+  padding: 1rem;
+  text-align: right;
+}
