@@ -307,6 +307,11 @@ a:hover {
   background: var(--color-primary);
   padding: 5rem 2rem 2rem;
   margin-top: 5rem;
+  width: 100%;
+}
+
+.side-fold__1440px {
+  background: var(--color-primary);
 }
 
 .side-fold > p {
@@ -684,6 +689,10 @@ input:focus {
   margin-top: 5rem;
 }
 
+.footer-block__1440px {
+  background: var(--footer-color);
+}
+
 .footer__logo {
   margin-bottom: 2rem;
 }
@@ -710,4 +719,10 @@ input:focus {
   .footer__heading, .social-media {
     text-align: center;
   }
+}
+
+/* ============================ Adjusting the screen  ============================ */
+.width {
+  max-width: 1440px;
+  margin: 0 auto;
 }
